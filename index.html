@@ -5,11 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="dist/interface.js" defer></script>
+    <script src="dist/class.js" defer></script>
     <script src="dist/app.js" defer></script>
+    <script src="dist/search.js" defer></script>
+    <script src="dist/Lista.js" defer></script>
+
+    <link rel="stylesheet" href="./dist/styles.css">
 </head>
+
+
+
 <body>
-    <input id="input1">
-    <input id="input2">
-    <button id="button">Clique aqui</button>
+    <header>
+        <div class="flex-container menu">
+            <h1>TMDB API</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="busca">
+            <div id="areaLogin" class="areaLogin">
+                <input id="login" placeholder="Login" onchange="preencherLogin(event)">
+                <input id="senha" placeholder="Senha" type="password" onchange="preencherSenha(event)">
+                <input id="api-key" placeholder="Api Key" onchange="preencherApi()">
+                <button id="login-button" disabled>Login</button>
+            </div>
+
+            <div class="pt">
+            <div class="lista">
+                <input id="idLista" placeholder="Nome da lista...">
+                <button id="buscaLista">Busca lista</button>
+                <button id="criaLista">Criar lista</button>
+            </div>
+
+            <div classs="pt" id="search-container" style="margin-left: 20px">                
+                <input id="search" placeholder="Escreva...">
+                <button id="search-button">Pesquisar Filme</button>
+            </div>
+            </div>
+
+
+
+        </div>
+        <div id="filmes">
+            <!--<ul>
+                <li>
+                    <div class="titulo">
+                        teste
+                    </div>
+                    <div class="poster">
+                        <img src="./assets/" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="titulo">
+                        teste
+                    </div>
+                    <div class="poster">
+                        <img src="./assets/poster.jpg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="titulo">
+                        teste
+                    </div>
+                    <div class="poster">
+                        <img src="./assets/poster.jpg" alt="">
+                    </div>
+                </li>
+            </ul>-->
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <p>&copy; 2022 CSS Flexbox</p>
+        <p>Desenvolvido por: Alberto Gonçalves</p>
+    </footer>
+    
 </body>
+
 </html>

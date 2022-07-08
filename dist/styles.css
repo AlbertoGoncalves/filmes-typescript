@@ -1,0 +1,133 @@
+.flex-container{
+    display: flex;
+    max-width: 992px;
+    margin: auto;
+    width: 100%;
+    min-width: 320px; 
+}
+
+header{
+    background-image: linear-gradient(to bottom, #122a57, #122a57, #122a57 ,#0072b6);   
+    height: 100px;
+    display: flex;
+    text-align: center;
+    color: #fff;
+}
+
+header .menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .menu h1{
+    margin: 10px;
+}
+
+
+body{
+    background-color: rgb(248, 248, 248);
+    color: rgb(36, 36, 36);
+}
+
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(241, 241, 241);
+    padding: 10pt;
+    border-radius: 10pt;
+}
+
+.titulo{
+    float: left;
+    width: 200pt;
+    
+}
+.poster{
+    float: right;
+    max-width: 100pt;
+}
+.poster img{
+    float: right;
+    width: 100pt;
+    min-height: 150pt;
+    margin-right: auto;
+    border-radius: 4pt;
+    background-color: rgb(246, 246, 246);
+}
+#filmes{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+#filmes ul {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+#filmes li{
+    margin: 3pt;
+    border-radius: 5pt;
+    border: 1px solid rgb(229, 229, 229);
+    padding: 5pt;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 300pt;
+    justify-content: space-between;
+    min-height: 250pt;
+}
+
+.busca{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    /* border: 5px solid #124157; */
+    
+}
+
+.pt{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    /* border: 5px solid #124157; */
+    
+}
+
+.hidden{
+    display: none;
+}
+
+.criaLista{
+    padding-top: 3pt;
+}
+span{
+    font-weight: bold;
+
+}
+.areaLogin{
+    display: flex; 
+    width: 300px; 
+    height: 100px; 
+    justify-content: space-between; 
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+
+.footer{
+    background-image: linear-gradient(to bottom,#0072b6, #122a57, #122a57, #122a57 );
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    align-items: center;
+    height: 40px;
+}
+
